@@ -63,7 +63,7 @@ int main(int argc, char const *argv[])
         printf("Child process execution\n");
 
         struct passwd *p;
- char user[]="nobody";
+        char user[]="nobody";
         if ((p = getpwnam(user)) == NULL){
             perror("getpwnam() error");
             exit(EXIT_FAILURE);
